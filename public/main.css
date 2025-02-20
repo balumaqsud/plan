@@ -1,0 +1,411 @@
+/* main */
+.frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.frame .main_frame {
+    position: relative;
+    width: 1440px;
+    height: 1312px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 2px;
+}
+
+.main_frame .left_side {
+    position: relative;
+    height: 1315px;
+    width: 305px;
+    background-color: white;
+
+}
+
+.main_frame .midd_side {
+    width: 970px;
+    height: 1260px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 28px;
+}
+
+.main_frame .right_side {
+    background-color: white;
+    width: 108px;
+    height: 1314px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* left */
+
+.main_frame .left_side .left_1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 228px;
+    height: 253px;
+    margin-top: 50px;
+    margin-left: 40px;
+
+}
+
+.main_frame .left_side .seperator {
+    position: relative;
+    width: 220px;
+    height: 0px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    margin-top: 39px;
+    border: 1.5px solid #f0f0f8;
+}
+
+.main_frame .left_side .left_2 {
+    height: 125px;
+    width: 220px;
+    margin-left: 40px;
+}
+
+.main_frame .left_side .left_3 {
+    height: 153px;
+    width: 220px;
+    margin-left: 40px;
+}
+
+.main_frame .left_side .left_4 {
+    height: 242px;
+    width: 220px;
+    margin-left: 40px;
+}
+
+.main_frame .left_side .left_5 {
+    height: 148px;
+    width: 220px;
+    margin-left: 40px;  
+}
+
+/* left insides 1 */
+
+.main_frame .left_side .left_1 .left_1_1 {
+    display: flex;
+    position: relative;
+    width: 156px;
+    height: 144px;
+    margin-bottom: 29px;
+}
+
+.main_frame .left_side .left_1 .left_1-2 {
+    position: relative;
+    width: 66.63px;
+    height: 20.9px;
+    margin-bottom: 6.65px;
+    font-family: ' sans-serif';
+    font-style: normal ;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_frame .left_side .left_1 .left_1_3 {
+    position: relative;
+    width: 147px;
+    height: 26px;
+    font-family: ' sans-serif';
+    font-style: normal ;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 6.65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_frame .left_side .left_1 .left_1_4 {
+    position: relative;
+    display: flex;
+    width: 220px;
+    margin-top: 19px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.link_href {
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    position: relative;
+    width: 25px;
+    height: 22.8px;
+    border-radius: 50%;
+    filter: drop-shadow(0 4px 4px grey);
+    background-color: #ffb400;
+}
+
+.icon_1 {
+    position: relative;
+    left: 22%;
+    right: 30%;
+    bottom: 6%;
+    margin-top: 5.5px;
+}
+/* left insides ages... 2 */
+
+.left_2_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.left_2_1_start {
+    background-color: #ffb400;
+}
+
+/* left insides lagnguages... 3 and for 4  skills */
+
+.intro_left {
+    display: flex;
+    flex-direction: column;
+    font-family: ' sans-serif';
+    font-style: normal ;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+
+}
+
+.persentages {
+   position: relative;
+    max-width: 220px;
+    height: 2px;
+    margin-bottom: 2px;
+    margin-top: 3px;
+    border: 1.5px solid wheat;
+    border-radius: 20%;
+    
+}
+
+.persentages_in {
+    border: 1.5px solid #ffb400;
+}
+
+.left_3_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    font-size: 16px;
+    color: grey;
+}
+
+
+/* left insides more skills... 5 */
+
+.check {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.left_5_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+
+/* starting middle */
+.frame .main_frame .midd_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.frame .main_frame .midd_side .banners {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.banner_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    width: 500px;
+    gap: 18px;
+}
+
+.text_main {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+.text_des {
+    margin-top: 0;
+    width: 424px;
+    font-size: 16px;
+    font-family: "Inter";
+    color: rgb(148, 148, 148);
+    font-weight: 200;
+}
+
+/* image side */
+.main_image {
+    margin-top: 20px;
+}
+
+
+/* services */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 970px;
+    height: 653px;
+}
+
+.services_intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 600;
+
+}
+
+.service_des {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    width: 420px;
+    font-size: 14px;
+    font-family: "Inter";
+    color: rgb(146, 145, 145);
+    font-weight: 200;
+    text-align: center;
+
+}
+
+/* services cards */
+
+.item_icons {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 68px;
+    height: 68px;
+}
+
+.services_h1 {
+    margin: 10px;
+    font-size: 20px;
+}
+.services_p {
+    margin: 5px;
+    font-size: 12px;
+    font-family: "Inter";
+    color: rgb(146, 145, 145);
+}
+.services_p_last {
+    margin: 12px;
+    width: 240px;
+    font-size: 12px;
+    font-family: "Inter";
+    color: rgb(146, 145, 145);
+}
+
+
+.services_cards {
+    display: flex;
+    flex-direction: row;
+     justify-content: space-between;
+}
+
+.services_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 310px;
+    height: 225px;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* right side codes */
+
+.top_alone {
+    margin-bottom: 140px;
+}
+
+.right_item {
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.right_icon {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: drop-shadow(0 3px 3px rgb(208, 208, 208));
+    background-color:rgb(252, 252, 252);
+}
+
+.icon_itself {
+    position: relative;
+    left: 24%;
+    top: 10%;
+    margin-top: 5.5px;
+    width: 22px;
+    height: 22px;
+}
+
+.bb {
+    background-color: #ffb400;
+}
+
+.mm {
+    background-color: white;
+}
+
+
+
+
+
+
