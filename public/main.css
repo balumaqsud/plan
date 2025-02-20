@@ -1,0 +1,113 @@
+/* main */
+.frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.frame .main_frame {
+    position: relative;
+    width: 1440px;
+    height: 1312px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.main_frame .left_side {
+    position: relative;
+    height: 1315px;
+    width: 305px;
+
+}
+
+.main_frame .midd_side {
+    width: 970px;
+    height: 1260px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 28px;
+
+    background-color: green;
+   
+}
+
+.main_frame .right_side {
+    background-color: blue;
+    width: 108px;
+    height: 1314px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* left */
+
+.main_frame .left_side .left_1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 228px;
+    height: 253px;
+    margin-top: 50px;
+    margin-left: 40px;
+    background-color: blue;
+}
+
+.main_frame .left_side .seperator {
+    position: relative;
+    width: 220px;
+    height: 0px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    margin-top: 39px;
+    border: 1.5px solid #f0f0f8;
+}
+
+.main_frame .left_side .left_2 {
+    height: 125px;
+    width: 220px;
+    margin-left: 40px;
+    background-color: aliceblue;
+}
+
+.main_frame .left_side .left_3 {
+    height: 153px;
+    width: 220px;
+    margin-left: 40px;
+    background-color: aliceblue;
+}
+
+.main_frame .left_side .left_4 {
+    height: 242px;
+    width: 220px;
+    margin-left: 40px;
+    background-color: aliceblue;
+}
+
+.main_frame .left_side .left_5 {
+    height: 148px;
+    width: 220px;
+    margin-left: 40px;
+    background-color: aliceblue;
+}
+
+/* left insides */
+
+.main_frame .left_side .left_1 .left_1_1 {
+    display: flex;
+    position: relative;
+    width: 156px;
+    height: 144px;
+    margin-bottom: 29px;
+}
+
