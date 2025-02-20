@@ -325,9 +325,8 @@
 }
 
 .services_h1 {
-    margin: 12px;
-    font-size: 18px;
-
+    margin: 10px;
+    font-size: 20px;
 }
 .services_p {
     margin: 5px;
@@ -362,11 +361,10 @@
 }
 
 
-/* right side */
+/* right side codes */
 
 .top_alone {
-    margin-bottom: 70px;
-
+    margin-bottom: 140px;
 }
 
 .right_item {
@@ -378,13 +376,13 @@
 }
 
 .right_icon {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 13px;
+    margin-bottom: 13px;
     position: relative;
-     width: 40px;
+    width: 40px;
     height: 40px;
     border-radius: 50%;
-    filter: drop-shadow(0 4px 4px grey);
+    filter: drop-shadow(0 3px 3px rgb(208, 208, 208));
     background-color:rgb(252, 252, 252);
 }
 
@@ -401,6 +399,9 @@
     background-color: #ffb400;
 }
 
+.mm {
+    background-color: white;
+}
 
 
 
