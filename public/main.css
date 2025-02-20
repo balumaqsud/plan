@@ -77,31 +77,27 @@
     height: 125px;
     width: 220px;
     margin-left: 40px;
-    background-color: aliceblue;
 }
 
 .main_frame .left_side .left_3 {
     height: 153px;
     width: 220px;
     margin-left: 40px;
-    background-color: aliceblue;
 }
 
 .main_frame .left_side .left_4 {
     height: 242px;
     width: 220px;
     margin-left: 40px;
-    background-color: aliceblue;
 }
 
 .main_frame .left_side .left_5 {
     height: 148px;
     width: 220px;
-    margin-left: 40px;
-    background-color: aliceblue;
+    margin-left: 40px;  
 }
 
-/* left insides */
+/* left insides 1 */
 
 .main_frame .left_side .left_1 .left_1_1 {
     display: flex;
@@ -111,7 +107,7 @@
     margin-bottom: 29px;
 }
 
-•.main_frame .left_side .left_1 .left_1-2 {
+.main_frame .left_side .left_1 .left_1-2 {
     position: relative;
     width: 66.63px;
     height: 20.9px;
@@ -169,6 +165,76 @@
     right: 28%;
     margin-top: 5.5px;
 }
+/* left insides ages... 2 */
 
+.left_2_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.left_2_1_start {
+    background-color: #ffb400;
+}
+
+/* left insides lagnguages... 3 and for 4  skills */
+
+.intro_left {
+    display: flex;
+    flex-direction: column;
+    font-family: ' sans-serif';
+    font-style: normal ;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+
+}
+
+.persentages {
+   position: relative;
+    max-width: 220px;
+    height: 2px;
+    margin-bottom: 2px;
+    margin-top: 3px;
+    border: 1.5px solid wheat;
+    
+}
+
+.persentages_in {
+    border: 1.5px solid #ffb400;
+}
+
+.left_3_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    font-size: 16px;
+    color: grey;
+}
+
+
+/* left insides more skills... 5 */
+
+.check {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.left_5_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: grey;
+}
 
 
