@@ -1,5 +1,15 @@
 const express = require("express");
 const http = require("http");
+const fs = require("fs");
+
+let user;
+fs.readFile("database/user.json", "utf8", (err, data) => {
+  if (err) {
+    console.log(err);
+  } else {
+    user = JSON.parse(data);
+  }
+});
 
 //app
 const app = express();
@@ -22,6 +32,10 @@ app.post("/create-item", (req, res) => {
 ///main page rendering harid.ejs in views
 app.get("/", (req, res) => {
   res.render("harid");
+});
+
+app.get("/author", (req, res) => {
+  res.render("author", { user: user });
 });
 
 //creating server with https
