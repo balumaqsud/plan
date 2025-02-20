@@ -22,6 +22,7 @@
     position: relative;
     height: 1315px;
     width: 305px;
+    background-color: white;
 
 }
 
@@ -33,13 +34,10 @@
     flex-direction: column;
     margin-left: 30px;
     margin-right: 28px;
-
-    background-color: green;
-   
 }
 
 .main_frame .right_side {
-    background-color: blue;
+    background-color: white;
     width: 108px;
     height: 1314px;
     position: relative;
@@ -199,6 +197,7 @@
     margin-bottom: 2px;
     margin-top: 3px;
     border: 1.5px solid wheat;
+    border-radius: 20%;
     
 }
 
@@ -235,6 +234,132 @@
     margin-top: 5px;
     margin-bottom: 5px;
     color: grey;
+}
+
+
+/* starting middle */
+.frame .main_frame .midd_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.frame .main_frame .midd_side .banners {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     align-items: flex-start;
+     background-color: white;
+}
+
+.banner_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    width: 500px;
+    gap: 18px;
+}
+
+.text_main {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+.text_des {
+    margin-top: 0;
+    width: 424px;
+    font-size: 16px;
+    font-family: "Inter";
+    color: rgb(148, 148, 148);
+    font-weight: 200;
+}
+
+/* image side */
+.main_image {
+    margin-top: 20px;
+}
+
+
+/* services */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 970px;
+    height: 653px;
+}
+
+.services_intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 600;
+
+}
+
+.service_des {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    width: 420px;
+    font-size: 14px;
+    font-family: "Inter";
+    color: rgb(146, 145, 145);
+    font-weight: 200;
+    text-align: center;
+
+}
+
+/* services cards */
+
+.item_icons {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 68px;
+    height: 68px;
+}
+
+.services_h1 {
+    margin: 12px;
+    font-size: 18px;
+
+}
+.services_p {
+    margin: 5px;
+    font-size: 12px;
+    font-family: "Inter";
+    color: rgb(146, 145, 145);
+}
+.services_p_last {
+    margin: 12px;
+    width: 240px;
+    font-size: 12px;
+    font-family: "Inter";
+    color: rgb(146, 145, 145);
+}
+
+
+.services_cards {
+    display: flex;
+    flex-direction: row;
+     justify-content: space-between;
+}
+
+
+.services_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 310px;
+    height: 225px;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
 }
 
 

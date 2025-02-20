@@ -13,10 +13,13 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
     <title>Author Portfolio</title>
   </head>
-  <body>
+  <body style="background: rgb(244, 238, 239)">
     <div class="frame">
       <div class="main_frame">
         <div class="left_side">
@@ -155,35 +158,120 @@
             </div>
             <div class="left_5_1">
               <img
-                src="check.svg"
+                src="icons/check.svg"
                 alt=""
                 class="check"
               /><%=user.extra_skills[0]%>
             </div>
             <div class="left_5_1">
               <img
-                src="check.svg"
+                src="icons/check.svg"
                 alt=""
                 class="check"
               /><%=user.extra_skills[1]%>
             </div>
             <div class="left_5_1">
               <img
-                src="check.svg"
+                src="icons/check.svg"
                 alt=""
                 class="check"
               /><%=user.extra_skills[2]%>
             </div>
             <div class="left_5_1">
               <img
-                src="check.svg"
+                src="icons/check.svg"
                 alt=""
                 class="check"
               /><%=user.extra_skills[3]%>
             </div>
           </div>
         </div>
-        <div class="midd_side">fds</div>
+        <div class="midd_side">
+          <div class="banners">
+            <div class="banner_text">
+              <h1 class="text_main">Doctor neurologists in OHSU Hospital</h1>
+              <p class="text_des"><%=user.about_me%></p>
+              <img
+                style="border-radius: 5%"
+                src="/author/buttons/btn.png"
+                width="160px"
+                height="50px"
+              />
+            </div>
+            <div class="banner_image">
+              <img
+                class="main_image"
+                src="/author/images/me.jpg"
+                width="326px"
+                height="446px"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="services">
+            <div class="services_intro">
+              <div>My services</div>
+              <div class="service_des">
+                <p><%=user.service_desc%></p>
+              </div>
+            </div>
+            <div class="services_cards">
+              <div class="services_item">
+                <img
+                  class="item_icons"
+                  src="/author/icons/computer.svg"
+                  alt=""
+                />
+                <h4 class="services_h1">Web development</h4>
+                <p class="services_p">Blog, E-commerce</p>
+              </div>
+              <div class="services_item">
+                <img
+                  class="item_icons"
+                  src="/author/icons/game-development.svg"
+                  alt=""
+                />
+                <h4 class="services_h1">Web development</h4>
+                <p class="services_p">Mobile app, website design</p>
+              </div>
+              <div class="services_item">
+                <img
+                  class="item_icons"
+                  src="/author/icons/illustration.svg"
+                  alt=""
+                />
+                <h4 class="services_h1">Web development</h4>
+                <p class="services_p">Voice Over, Beat Making</p>
+              </div>
+            </div>
+            <div class="services_cards">
+              <div class="services_item">
+                <img
+                  class="item_icons"
+                  src="/author/icons/microphone.svg"
+                  alt=""
+                />
+                <h4 class="services_h1">Web development</h4>
+                <p class="services_p">Character Design, Props & Objects</p>
+              </div>
+              <div class="services_item">
+                <img
+                  class="item_icons"
+                  src="/author/icons/photographer.svg"
+                  alt=""
+                />
+                <h4 class="services_h1">Web development</h4>
+                <p class="services_p">portrait, product photography</p>
+              </div>
+              <div class="services_item">
+                <h5 class="services_h1" style="margin-top: 30px">
+                  Advertising
+                </h5>
+                <p class="services_p_last"><%=user.about_me%></p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="right_side">fds</div>
       </div>
     </div>
