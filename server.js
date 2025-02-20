@@ -34,6 +34,7 @@ app.get("/", (req, res) => {
   res.render("harid");
 });
 
+//// author page route
 app.get("/author", (req, res) => {
   res.render("author", { user: user });
 });
