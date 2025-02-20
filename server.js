@@ -33,6 +33,10 @@ app.post("/create-item", (req, res) => {
 app.get("/", (req, res) => {
   res.render("harid");
 });
+///main page rendering harid.ejs in views
+app.get("/harid", (req, res) => {
+  res.render("harid");
+});
 
 //// author page route
 app.get("/author", (req, res) => {
