@@ -1,3 +1,19 @@
+//A-TASK:
+// example countLetter("e", "engineer");
+
+let count = 0;
+const letterCounter = (target, string) => {
+  for (let i = 0; i < string.length; i++) {
+    if (target === string[i]) {
+      count++;
+    }
+  }
+  console.log("count:", count);
+  return count;
+};
+
+letterCounter("l", "Ollobergan Abdulla Maksud Ugli");
+
 const adviceList = [
   "Keep learning every single day", //0-20
   "Stay focused on your goals", //20-30
