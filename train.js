@@ -51,7 +51,7 @@ async function giveAsyncAdvice(age) {
   }
 }
 
-//call
+//call with then() and catch()
 console.log("----------------1");
 giveAsyncAdvice(25)
   .then((data) => console.log("async answer:", data))
