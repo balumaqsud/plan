@@ -14,6 +14,7 @@ const letterCounter = (target, string) => {
 
 letterCounter("l", "Ollobergan Abdulla Maksud Ugli");
 
+//////////////////////////////////
 const adviceList = [
   "Keep learning every single day", //0-20
   "Stay focused on your goals", //20-30
@@ -63,6 +64,7 @@ const adviceList = [
 // }
 
 // //////call with then() and catch()
+
 // console.log("----------------1");
 // giveAsyncAdvice(25)
 //   .then((data) => console.log("async answer:", data))
@@ -70,6 +72,7 @@ const adviceList = [
 // console.log("----------------2");
 
 // /////// with await to escape callback hell
+
 // async function giveAnswer() {
 //   let answer = await giveAsyncAdvice(20);
 //   console.log("with await: ", answer);
@@ -84,7 +87,8 @@ const adviceList = [
 // }
 // giveAnswer();
 
-// ////// set Interval with callback, qaconki qiymat qaytsa, qaytaraveradi
+//////// set Interval with callback, qaconki qiymat qaytsa, qaytaraveradi
+
 // function giveAdvice(age, callback) {
 //   if (typeof age !== "number") callback("insert number", null);
 //   else if (age <= 20) callback(null, adviceList[0]);
@@ -109,5 +113,7 @@ const adviceList = [
 // console.log("----------------2");
 
 // Callback: A function passed as an argument to another function and executed later (e.g., in setTimeout or event listeners).
-// Promise: An object that represents the eventual result of an asynchronous operation, allowing .then() and .catch() chaining.
+// Promise: An object that represents the eventual result
+// of an asynchronous operation, allowing .then() and .catch() chaining.
+// A Promise as a function means returning a Promise inside a function, allowing asynchronous operations.
 //Async/Await: A cleaner way to work with Promises, where await pauses execution until the Promise resolves.
