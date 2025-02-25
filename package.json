@@ -19,7 +19,7 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "http": "^0.0.1-security"
+    "mongodb": "^3.2.6"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"

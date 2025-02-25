@@ -1,33 +1,28 @@
-const express = require("express");
 const http = require("http");
-const fs = require("fs");
+const mongodb = require("mongodb");
 
-//app
-const app = express();
-// 1 express kirish code
-app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+//mongo db connection
+let db;
+const MONGO_URL =
+  "mongodb+srv://mypython25:JH0V91eT1zo96BIR@mit.omrzr.mongodb.net/?retryWrites=true&w=majority&appName=MIT";
 
-//2 sessions code
-//3 views code
-app.set("views", "./views");
-app.set("view engine", "ejs");
+//using connect function of mongo db
 
-//4 routing code
-//form in harid has action sending it to /create-item
-app.post("/create-item", (req, res) => {
-  res.json({ test: "success" });
-});
-
-///main page rendering harid.ejs in views
-app.get("/", (req, res) => {
-  res.render("harid");
-});
-
-//creating server with https
-let PORT = 3000;
-const server = http.createServer(app);
-server.listen(PORT, () => {
-  console.log(`this app is running in port: ${PORT}`);
-});
+mongodb.connect(
+  MONGO_URL,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  (error, client) => {
+    if (error) {
+      console.log(error);
+    } else {
+      const PORT = 3000;
+      console.log("mongoDB databse connected succesfully");
+      module.exports = client;
+      const app = require("./app");
+      const server = http.createServer(app);
+      server.listen(PORT, () => {
+        console.log(`this app is running in port: ${PORT} `);
+      });
+    }
+  }
+);
