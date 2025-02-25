@@ -21,12 +21,31 @@ app.set("view engine", "ejs");
 //4 routing code
 //form in harid has action sending it to /create-item
 app.post("/create-item", (req, res) => {
-  res.json({ test: "success" });
+  const new_data = req.body.item;
+  db.collection("plansCollection").insertOne(
+    { item: new_data },
+    (err, succ) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log("added to db");
+      }
+    }
+  );
 });
 
 ///main page rendering plan.ejs in views
 app.get("/", (req, res) => {
-  res.render("plan");
+  db.collection("plansCollection")
+    .find()
+    .toArray((err, data) => {
+      if (err) {
+        console.log(err);
+        res.end("something went wrong with db");
+      } else {
+        res.render("plan", { items: data });
+      }
+    });
 });
 
 module.exports = app;

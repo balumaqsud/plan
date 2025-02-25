@@ -39,6 +39,18 @@
           <button class="btn btn-light m-3">Clear all</button>
         </div>
       </div>
+      <div class="row align-items-center m-3 p-3 border rounded">
+        <ul id="item_ul" class="list-group p-3">
+          <% items.map((item) => { %>
+          <li class="list-group-item list-group-item-indo d-flex align-items-center justify-content-between "><%=item.item%>
+            <div>
+              <button data-id="<%=item._id%>" class="btn btn-dark btn-md">Edit</button>
+              <button data-id="<%=item._id%>" class="btn btn-dark btn-md">Delete</button>
+            </div>
+          </li>
+          <% }) %>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
