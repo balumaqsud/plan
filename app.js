@@ -1,7 +1,5 @@
 const express = require("express");
-
-console.log("app started");
-
+console.log("app: started");
 //app
 const app = express();
 
@@ -24,7 +22,7 @@ app.post("/create-item", (req, res) => {
   const new_data = req.body.item;
   db.collection("plansCollection").insertOne(
     { item: new_data },
-    (err, succ) => {
+    (err, data) => {
       if (err) {
         console.log(err);
       } else {

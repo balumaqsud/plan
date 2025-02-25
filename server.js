@@ -16,12 +16,12 @@ mongodb.connect(
       console.log(error);
     } else {
       const PORT = 3000;
-      console.log("mongoDB databse connected succesfully");
+      console.log("db:connected succesfully");
       module.exports = client;
       const app = require("./app");
       const server = http.createServer(app);
       server.listen(PORT, () => {
-        console.log(`this app is running in port: ${PORT} `);
+        console.log(`server: this app is running in port: ${PORT} `);
       });
     }
   }
