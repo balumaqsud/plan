@@ -4,10 +4,9 @@ const mongodb = require("mongodb");
 //mongo db connection
 let db;
 const MONGO_URL =
-  "mongodb+srv://mypython25:JH0V91eT1zo96BIR@mit.omrzr.mongodb.net/?retryWrites=true&w=majority&appName=MIT";
+  "mongodb+srv://mypython25:zcMaVEXKA72lSUqO@mit.omrzr.mongodb.net/?retryWrites=true&w=majority&appName=MIT";
 
 //using connect function of mongo db
-
 mongodb.connect(
   MONGO_URL,
   { useNewUrlParser: true, useUnifiedTopology: true },
