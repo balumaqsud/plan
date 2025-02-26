@@ -28,6 +28,16 @@ app.post("/create-item", (req, res) => {
     }
   );
 });
+//delete route
+app.post("/delete-item", (req, res) => {
+  const id = req.body.id;
+  db.collection("plansCollection").deleteOne(
+    { _id: new mongodb.ObjectId(id) },
+    (err, data) => {
+      res.json({ state: "succes" });
+    }
+  );
+});
 
 ///main page rendering plan.ejs in views
 app.get("/", (req, res) => {

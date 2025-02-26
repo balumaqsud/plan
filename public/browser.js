@@ -1,6 +1,5 @@
 //
-//
-
+//function we pass in inserting html
 function addTemplate(item) {
   return `<li class="list-group-item list-group-item-indo d-flex align-items-center justify-content-between ">${item.item}
             <div>
@@ -26,4 +25,20 @@ document.getElementById("create-form").addEventListener("submit", (e) => {
     .catch((error) =>
       console.log(`something went wrong in axios.post-then with ${error}`)
     );
+});
+
+document.addEventListener("click", (e) => {
+  console.log(e);
+  data_id = e.target.getAttribute("data-id");
+
+  if (e.target.classList.contains("delete")) {
+    if (confirm("Sure to delete?")) {
+      axios
+        .post("delete-item", { id: data_id })
+        .then((response) => {
+          e.target.parentElement.parentElement.remove();
+        })
+        .catch((err) => err);
+    }
+  }
 });
