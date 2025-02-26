@@ -24,11 +24,7 @@ app.post("/create-item", (req, res) => {
   db.collection("plansCollection").insertOne(
     { item: new_data },
     (err, data) => {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log("added to db");
-      }
+      res.json(data.ops[0]);
     }
   );
 });
