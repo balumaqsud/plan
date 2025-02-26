@@ -1,17 +1,39 @@
-// //B-TASK:
-let count = 0;
-const countDigits = (string) => {
-  for (let i = 0; i < string.length; i++) {
-    if (parseInt(string[i])) {
-      count++;
-    }
-    if (string[i] == "0") {
-      count++;
+//C-task
+const checkTwoWords = (str1, str2) => {
+  //if length's not the same
+  if (str1.length !== str2.length) {
+    return false;
+  }
+  let results = [];
+  //checkiing
+  for (let i = 0; i < str1.length; i++) {
+    if (str2.includes(str1[i])) {
+      results.push("true");
+    } else {
+      results.push("false");
     }
   }
-  console.log(count);
+  //returning
+  return results.every((ele) => ele === "true");
 };
-countDigits("ad2a54y79wet0sfg102b9");
+
+//call
+console.log(checkTwoWords("balu", "ulab"));
+
+// //B-TASK:
+// let count = 0;
+// const countDigits = (string) => {
+//   for (let i = 0; i < string.length; i++) {
+//     if (parseInt(string[i])) {
+//       count++;
+//     }
+//     if (string[i] == "0") {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+// };
+// countDigits("ad2a54y79wet0sfg102b9");
 
 // //A-TASK:
 // // example countLetter("e", "engineer");
