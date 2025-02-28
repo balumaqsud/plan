@@ -19,20 +19,6 @@ const checkTwoWords = (str1, str2) => {
 //call
 console.log(checkTwoWords("balu", "ulab"));
 
-// C-TASK - 2
-function checkWords(a, b) {
-  const arr1 = a.split("").sort();
-  const arr2 = b.split("").sort();
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] === arr2[i]) {
-      return true;
-    }
-    return false;
-  }
-}
-
-console.log(checkWords("balu", "ulab"));
-
 // //B-TASK:
 // let count = 0;
 // const countDigits = (string) => {
