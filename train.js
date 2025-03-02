@@ -1,20 +1,18 @@
 //C - task;
 const checkTwoWords = (str1, str2) => {
-  //if length's not the same
-  if (str1.length !== str2.length) {
+  let count = 0;
+  const arr1 = str1.split("").sort();
+  const arr2 = str2.split("").sort();
+
+  for (let i = 0; i < str1.length; i++) {
+    count++;
+
+    if (arr1.length === arr2.length && arr1[count] === arr2[count]) {
+      return true;
+    }
+
     return false;
   }
-  let results = [];
-  //checkiing
-  for (let i = 0; i < str1.length; i++) {
-    if (str2.includes(str1[i])) {
-      results.push("true");
-    } else {
-      results.push("false");
-    }
-  }
-  //returning
-  return results.every((ele) => ele === "true");
 };
 //call
 console.log(checkTwoWords("balu", "ulab"));
