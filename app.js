@@ -47,7 +47,18 @@ app.post("/clear_all", (req, res) => {
   }
 });
 
-//update
+//update_item
+app.post("/edit-item", (req, res) => {
+  const data = req.body.new_input;
+  const id = req.body.id;
+  db.collection("plansCollection").findOneAndUpdate(
+    { _id: new mongodb.ObjectId(id) },
+    { $set: { item: data } },
+    (err, data) => {
+      res.json({ state: "success" });
+    }
+  );
+});
 
 ///main page rendering plan.ejs in views
 app.get("/", (req, res) => {

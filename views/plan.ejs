@@ -42,7 +42,7 @@
       <div class="row align-items-center m-3 p-3 border rounded">
         <ul id="item_ul" class="list-group p-3">
           <% items.map((item) => { %>
-          <li class="list-group-item list-group-item-indo d-flex align-items-center justify-content-between "><%=item.item%>
+          <li class="list-group-item list-group-item-indo d-flex align-items-center justify-content-between "><span class="text"><%=item.item%></span>
             <div>
               <button data-id="<%=item._id%>" class=" edit btn btn-dark btn-md">Edit</button>
               <button data-id="<%=item._id%>" class=" delete btn btn-dark btn-md">Delete</button>

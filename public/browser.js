@@ -52,4 +52,24 @@ document.addEventListener("click", (e) => {
   }
 
   //update_item
+  if (e.target.classList.contains("edit")) {
+    let input = prompt(
+      "edit plan",
+      e.target.parentElement.parentElement.querySelector(".text").innerHTML
+    );
+    if (input) {
+      axios
+        .post("/edit-item", {
+          id: e.target.getAttribute("data-id"),
+          new_input: input,
+        })
+        .then((response) => {
+          console.log(response.data);
+          e.target.parentElement.parentElement.querySelector(
+            ".text"
+          ).innerHTML = input;
+        })
+        .catch((err) => err);
+    }
+  }
 });
