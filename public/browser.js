@@ -28,9 +28,8 @@ document.getElementById("create-form").addEventListener("submit", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  console.log("hh", e.target);
   data_id = e.target.getAttribute("data-id");
-
+  //delete
   if (e.target.classList.contains("delete")) {
     if (confirm("Sure to delete?")) {
       axios
@@ -41,4 +40,16 @@ document.addEventListener("click", (e) => {
         .catch((err) => err);
     }
   }
+
+  //clear_all
+  if (e.target.classList.contains("clear_all")) {
+    axios
+      .post("clear_all", { clear_all: true })
+      .then((response) => {
+        location.reload();
+      })
+      .catch((err) => err);
+  }
+
+  //update_item
 });

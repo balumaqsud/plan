@@ -38,6 +38,16 @@ app.post("/delete-item", (req, res) => {
     }
   );
 });
+// clear all
+app.post("/clear_all", (req, res) => {
+  if (req.body.clear_all) {
+    db.collection("plansCollection").deleteMany(() => {
+      res.json({ state: "cleared all" });
+    });
+  }
+});
+
+//update
 
 ///main page rendering plan.ejs in views
 app.get("/", (req, res) => {

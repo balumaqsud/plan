@@ -1,21 +1,21 @@
-//C - task;
-const checkTwoWords = (str1, str2) => {
-  let count = 0;
-  const arr1 = str1.split("").sort();
-  const arr2 = str2.split("").sort();
+// //C - task;
+// const checkTwoWords = (str1, str2) => {
+//   let count = 0;
+//   const arr1 = str1.split("").sort();
+//   const arr2 = str2.split("").sort();
 
-  for (let i = 0; i < str1.length; i++) {
-    count++;
+//   for (let i = 0; i < str1.length; i++) {
+//     count++;
 
-    if (arr1.length === arr2.length && arr1[count] === arr2[count]) {
-      return true;
-    }
+//     if (arr1.length === arr2.length && arr1[count] === arr2[count]) {
+//       return true;
+//     }
 
-    return false;
-  }
-};
-//call
-console.log(checkTwoWords("balu", "ulab"));
+//     return false;
+//   }
+// };
+// //call
+// console.log(checkTwoWords("balu", "ulab"));
 
 // //B-TASK:
 // let count = 0;
