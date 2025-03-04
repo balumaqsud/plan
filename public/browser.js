@@ -28,7 +28,7 @@ document.getElementById("create-form").addEventListener("submit", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  console.log(e);
+  console.log("hh", e.target);
   data_id = e.target.getAttribute("data-id");
 
   if (e.target.classList.contains("delete")) {
