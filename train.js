@@ -1,36 +1,42 @@
-const moment = require("moment");
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.prodcuts = { non, lagmon, cola };
-    this.now = moment().format("hh:mm a");
-  }
-  //methods
-  sell(product_name, product_count) {
-    if (product_count > this.prodcuts[product_name]) {
-      console.log(`we do not have ${product_count} of ${product_name}`);
-    } else {
-      this.prodcuts[product_name] -= product_count;
-      console.log(`At ${this.now} we sell ${product_count} of ${product_name}`);
-    }
-  }
-  recieve(product_name, product_count) {
-    this.prodcuts[product_name] += product_count;
-    console.log(
-      `At ${this.now} we recived ${product_count} of ${product_name}`
-    );
-  }
-  remainder() {
-    console.log(
-      `At ${this.now}, We have ${this.prodcuts["non"]}ta non, ${this.prodcuts["lagmon"]} lagmon , ${this.prodcuts["cola"]} cola!`
-    );
-  }
-}
+//task -e
+const reverse = (s) => {
+  return s.split("").reverse().join("");
+};
+console.log(reverse("hello"));
 
-const shop = new Shop(10, 10, 10);
-shop.recieve("lagmon", 10);
-shop.remainder();
-shop.sell("lagmon", 19);
-shop.remainder();
+// const moment = require("moment");
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.prodcuts = { non, lagmon, cola };
+//     this.now = moment().format("hh:mm a");
+//   }
+//   //methods
+//   sell(product_name, product_count) {
+//     if (product_count > this.prodcuts[product_name]) {
+//       console.log(`we do not have ${product_count} of ${product_name}`);
+//     } else {
+//       this.prodcuts[product_name] -= product_count;
+//       console.log(`At ${this.now} we sell ${product_count} of ${product_name}`);
+//     }
+//   }
+//   recieve(product_name, product_count) {
+//     this.prodcuts[product_name] += product_count;
+//     console.log(
+//       `At ${this.now} we recived ${product_count} of ${product_name}`
+//     );
+//   }
+//   remainder() {
+//     console.log(
+//       `At ${this.now}, We have ${this.prodcuts["non"]}ta non, ${this.prodcuts["lagmon"]} lagmon , ${this.prodcuts["cola"]} cola!`
+//     );
+//   }
+// }
+
+// const shop = new Shop(10, 10, 10);
+// shop.recieve("lagmon", 10);
+// shop.remainder();
+// shop.sell("lagmon", 19);
+// shop.remainder();
 
 // //C - task;
 // const checkTwoWords = (str1, str2) => {

@@ -1,4 +1,3 @@
-//
 //function we pass in inserting html
 function addTemplate(item) {
   return `<li class="list-group-item list-group-item-indo d-flex align-items-center justify-content-between ">${item.item}
@@ -8,7 +7,7 @@ function addTemplate(item) {
             </div>
           </li>`;
 }
-
+//
 document.getElementById("create-form").addEventListener("submit", (e) => {
   e.preventDefault();
   let create_input = document.getElementById("create-field");

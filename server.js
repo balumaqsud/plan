@@ -1,26 +1,24 @@
 const http = require("http");
 const mongodb = require("mongodb");
 
-//mongo db connection
-let db;
+//mongo connection
 const MONGO_URL =
   "mongodb+srv://mypython25:zcMaVEXKA72lSUqO@mit.omrzr.mongodb.net/?retryWrites=true&w=majority&appName=MIT";
 
-//using connect function of mongo db
 mongodb.connect(
   MONGO_URL,
   { useNewUrlParser: true, useUnifiedTopology: true },
-  (error, client) => {
-    if (error) {
-      console.log(error);
+  (err, client) => {
+    if (err) {
+      console.log(`this the error ${err}`);
     } else {
-      const PORT = 3000;
-      console.log("db:connected succesfully");
+      console.log("mongo successfully connected");
       module.exports = client;
+      let PORT = 3005;
       const app = require("./app");
       const server = http.createServer(app);
       server.listen(PORT, () => {
-        console.log(`server: this app is running in port: ${PORT} `);
+        console.log(`server is running in port ${PORT}`);
       });
     }
   }
