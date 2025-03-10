@@ -1,8 +1,21 @@
 //task -e
-const reverse = (s) => {
-  return s.split("").reverse().join("");
+const reverse = (numsArr) => {
+  let curr = 0;
+  for (let i = 0; i < numsArr.length; i++) {
+    if (curr < numsArr[i]) {
+      curr = numsArr[i];
+    }
+  }
+  return numsArr.indexOf(curr);
 };
-console.log(reverse("hello"));
+
+console.log(reverse([3, 55, 6, 99, 120, 9, 44]));
+
+// //task -e
+// const reverse = (s) => {
+//   return s.split("").reverse().join("");
+// };
+// console.log(reverse("hello"));
 
 // const moment = require("moment");
 // class Shop {

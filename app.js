@@ -1,5 +1,4 @@
 const express = require("express");
-console.log("app: started");
 const mongodb = require("mongodb");
 //app
 const app = express();
@@ -7,10 +6,10 @@ const app = express();
 //to use client in app
 const db = require("./server").db();
 
-// 1 express kirish code
+// 1 express kirish code  middlewares
 app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // traditional api
+app.use(express.json()); // rest api
 
 //2 sessions code
 //3 views code
@@ -28,6 +27,7 @@ app.post("/create-item", (req, res) => {
     }
   );
 });
+
 //delete route
 app.post("/delete-item", (req, res) => {
   const id = req.body.id;
@@ -67,11 +67,9 @@ app.get("/", (req, res) => {
     .toArray((err, data) => {
       if (err) {
         console.log(err);
-        res.end("something went wrong with db");
       } else {
         res.render("plan", { items: data });
       }
     });
 });
-
 module.exports = app;
