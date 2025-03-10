@@ -1,4 +1,4 @@
-//task -e
+//task -g
 const reverse = (numsArr) => {
   let curr = 0;
   for (let i = 0; i < numsArr.length; i++) {
