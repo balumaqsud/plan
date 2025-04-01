@@ -71,19 +71,19 @@ console.log(reverse([3, 55, 6, 99, 120, 9, 44]));
 // console.log(checkTwoWords("balu", "ulab"));
 
 // //B-TASK:
-// let count = 0;
-// const countDigits = (string) => {
-//   for (let i = 0; i < string.length; i++) {
-//     if (parseInt(string[i])) {
-//       count++;
-//     }
-//     if (string[i] == "0") {
-//       count++;
-//     }
-//   }
-//   console.log(count);
-// };
-// countDigits("ad2a54y79wet0sfg102b9");
+let count = 0;
+const countDigits = (string) => {
+  for (let i = 0; i < string.length; i++) {
+    if (parseInt(string[i])) {
+      count++;
+    }
+    if (string[i] == "0") {
+      count++;
+    }
+  }
+  console.log(count);
+};
+countDigits("ad2a54y79wet0sfg102b9");
 
 // //A-TASK:
 // // example countLetter("e", "engineer");
